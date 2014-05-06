@@ -1,0 +1,1 @@
+SELECT m.name, r.runtime FROM Movie m, Runtime r WHERE r.mid = m.mid GROUP BY m.mid, m.name HAVING COUNT(DISTINCT r.runtime) = COUNT(r.runtime) AND COUNT(r.runtime) > 1;
