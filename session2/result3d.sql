@@ -1,0 +1,1 @@
+SELECT p.pid FROM Person p WHERE "is a writer who's movies are all directorless";
